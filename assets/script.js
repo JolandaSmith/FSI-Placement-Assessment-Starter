@@ -10,7 +10,8 @@ const gbMinusBtn = document.querySelector("#minus-gb")
 
 gbPlusBtn.addEventListener("click", function () {
   gb++
-updateQuantity("gb")
+let quantity = +1
+UpdateQuantity(+1) 
 }); 
 console.log('Gingerbread + gbPlusBtn') 
 
@@ -18,7 +19,8 @@ gbMinusBtn.addEventListener("click", function (e) {
   if (gb > 0) {
     gb--
   }
-  updateQuantity("gb") 
+  let quantity = -1
+  UpdateQuantity(-1) 
 });
 console.log('Gingerbread - gbMinusBtn') 
 
